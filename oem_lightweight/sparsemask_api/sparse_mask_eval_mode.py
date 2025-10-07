@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torch.nn import init
 from torch.nn import functional as F
-from sparsemask_api.mobilenet_v2 import get_backbone
+from oem_lightweight.sparsemask_api.mobilenet_v2 import get_backbone
 
 
 def upsample(x, h, w):

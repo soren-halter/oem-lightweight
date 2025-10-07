@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from torchvision import transforms
 
-from utils import *
+from oem_lightweight.utils import *
 
 
 class SegEvaluator(object):
@@ -96,7 +96,7 @@ class SegEvaluator(object):
 
         plt.yticks([])
         plt.xticks([])
-        plt.show(block=True)
+        # plt.show(block=True)  # Disabled to prevent hanging in batch processing
 
         if save_img:
             if save_dir is not None:

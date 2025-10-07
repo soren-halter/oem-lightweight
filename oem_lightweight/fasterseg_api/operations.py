@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
-from slimmable_ops import USConv2d, USBatchNorm2d
+from oem_lightweight.fasterseg_api.slimmable_ops import USConv2d, USBatchNorm2d
 
 BatchNorm2d = nn.BatchNorm2d
 

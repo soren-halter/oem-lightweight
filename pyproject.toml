@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oem-lightweight"
+version = "0.1.0"
+description = "OEM Lightweight Semantic Segmentation Models"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "matplotlib",
+    "opencv-python",
+    "Pillow",
+    "easydict",
+    "thop",
+]
+
+[tool.setuptools.packages.find]
+include = ["oem_lightweight*"]

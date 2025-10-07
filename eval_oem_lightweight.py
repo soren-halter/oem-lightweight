@@ -1,7 +1,7 @@
 import torch
 from thop import profile
 
-from config import config
+from oem_lightweight.config import config
 from oem_lightweight.evaluator import SegEvaluator
 from oem_lightweight.utils import prepare_data
 from oem_lightweight.model import sparsemask, fasterseg

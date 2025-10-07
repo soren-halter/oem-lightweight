@@ -2,9 +2,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-from operations import *
-from genotypes import PRIMITIVES
-from seg_oprs import FeatureFusion, Head
+from oem_lightweight.fasterseg_api.operations import *
+from oem_lightweight.fasterseg_api.genotypes import PRIMITIVES
+from oem_lightweight.fasterseg_api.seg_oprs import FeatureFusion, Head
 
 BatchNorm2d = nn.BatchNorm2d
 
